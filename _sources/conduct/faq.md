@@ -1,4 +1,4 @@
-# Project Jupyter Code of Conduct - Frequently Asked Questions
+# Frequently Asked Questions
 
 This FAQ attempts to address common questions and concerns around the Jupyter
 community's Code of Conduct. If you still have questions after reading it,
@@ -29,7 +29,7 @@ in the past.
 
 However, we do expect that people will abide by the spirit and words of the Code
 of Conduct when in "official" Jupyter spaces. This code has been adopted by both
-the Jupyter Steering Council and JupyterDay/JupyterCon events. That means that
+the Jupyter Executive Council and JupyterDay/JupyterCon events. That means that
 it will apply both in community spaces and at our events.
 
 In practice, Jupyter spaces include mailing lists, various communication

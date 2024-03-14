@@ -1,320 +1,415 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="./" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Governance Document &#8212; Project Jupyter Governance</title>
-    
-  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>Previous Governance of Project Jupyter &#8212; Project Jupyter Governance</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
-    
-      
-  <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
-  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'governance';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Jupyter Distinguished Contributors" href="distinguished_contributors.html" />
-    <link rel="prev" title="Project Jupyter Governance" href="intro.html" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
-
-
-
+    <link rel="next" title="Transition: Bootstrapping Subproject Councils" href="bootstrapping_subproject_councils.html" />
+    <link rel="prev" title="Proposal for Jupyter’s Sustainable Growth" href="linux-proposal.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    <div class="container-xl">
-      <div class="row">
-          
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
     
-        <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="index.html">
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
   
   
-  <h1 class="site-logo" id="site-title">Project Jupyter Governance</h1>
   
+  
+  
+  
+    <p class="title logo__title">Project Jupyter Governance</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Project Jupyter Governance
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Governance</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Jupyter Governance Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="executive_council.html">Executive Council</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software_steering_council.html">Software Steering Council</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="software_subprojects.html">Software Subprojects</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="list_of_subprojects.html">List of Official Jupyter Subprojects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newsubprojects.html">New Subproject Process</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="standing_committees_and_working_groups.html">Standing Committees and Working Groups</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="list_of_standing_committees_and_working_groups.html">List of Standing Committees and Working Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="communitybuildingworkinggroup.html">Community Building Working Group</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="distinguished_contributors.html">Distinguished Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="people.html">Leadership Directory</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Code of Conduct</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="conduct/code_of_conduct.html">Project Jupyter Code of Conduct</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="conduct/enforcement.html">Enforcement Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conduct/reporting_online.html">Reporting Guide - Online Community</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conduct/reporting_events.html">Reporting Guide - Jupyter Events</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="CodeofConductJupyterDay.html">JupyterDay Code of Conduct</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="CodeofConductJupyterDayOrganizer.html">JupyterDay Organizer Code of Conduct</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="conduct/faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Organizational Policy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="decision_making.html">Decision-Making Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="papers.html">Process for Authoring Jupyter Related Academic Papers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trademarks.html">Trademark Usage Policy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projectlicense.html">Licensing terms for Project Jupyter code</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Proposals</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="linux-proposal.html">Proposal for Jupyter’s Sustainable Growth</a></li>
+
+
+
+
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Previous Governance</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Previous Governance of Project Jupyter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bootstrapping_subproject_councils.html">Transition: Bootstrapping Subproject Councils</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bootstrapping_executive_council.html">Transition: Bootstrapping Executive Council and New Governance</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/governance.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
 </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
-   Project Jupyter Governance
-  </a>
- </li>
-</ul>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Main Governance Document
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="distinguished_contributors.html">
-   Jupyter Distinguished Contributors
-  </a>
- </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="conduct/code_of_conduct.html">
-   Project Jupyter Code of Conduct
-  </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="conduct/enforcement.html">
-     Jupyter Code of Conduct - Enforcement Manual
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="conduct/faq.html">
-     Project Jupyter Code of Conduct - Frequently Asked Questions
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="conduct/reporting_events.html">
-     Project Jupyter Code of Conduct - Reporting Guide - Jupyter Events
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="conduct/reporting_online.html">
-     Project Jupyter Code of Conduct - Reporting Guide - Online Community
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="CodeofConductJupyterDay.html">
-     JupyterDay Code of Conduct
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="CodeofConductJupyterDayOrganizer.html">
-     JupyterDay Organizer Code of Conduct
-    </a>
-   </li>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="people.html">
-   Steering Council and Institutional Partners
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="newsubprojects.html">
-   New Subproject Process
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="papers.html">
-   Process for Authoring Jupyter Related Academic Papers
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="trademarks.html">
-   Trademark Usage Policy
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="projectlicense.html">
-   Licensing terms for Project Jupyter code
-  </a>
- </li>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Previous Governance of Project Jupyter</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-project">The Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#governance">Governance</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bdfl">BDFL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steering-council">Steering Council</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#council-membership">Council membership</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conflict-of-interest">Conflict of interest</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#private-communications-of-the-council">Private communications of the Council</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subcommittees">Subcommittees</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#numfocus-subcommittee">NumFOCUS Subcommittee</a></li>
 </ul>
-
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/governance.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#institutional-partners-and-funding">Institutional Partners and Funding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-governance-documents">Changing the Governance Documents</a></li>
+</ul>
+            </nav>
+        </div>
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i>
-            Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-project">
-   The Project
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#governance">
-   Governance
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#bdfl">
-     BDFL
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#steering-council">
-     Steering Council
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#council-membership">
-       Council membership
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#conflict-of-interest">
-       Conflict of interest
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#private-communications-of-the-council">
-       Private communications of the Council
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#subcommittees">
-       Subcommittees
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#numfocus-subcommittee">
-       NumFOCUS Subcommittee
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#institutional-partners-and-funding">
-   Institutional Partners and Funding
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#changing-the-governance-documents">
-   Changing the Governance Documents
-  </a>
- </li>
-</ul>
-
-        </nav>
-        
-        </div>
-    </div>
-</div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
-              <div>
+              
                 
-  <div class="section" id="main-governance-document">
-<h1>Main Governance Document<a class="headerlink" href="#main-governance-document" title="Permalink to this headline">¶</a></h1>
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="previous-governance-of-project-jupyter">
+<h1>Previous Governance of Project Jupyter<a class="headerlink" href="#previous-governance-of-project-jupyter" title="Link to this heading">#</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Prior to December 2022, Project Jupyter had a governance model based on a BDFL and a Steering Council, as described in this document.</p>
+</div>
 <p>The official version of this document, along with a list of
 individuals and institutions in the roles defined in the governance
 section below, is contained in The Project Governance Repository at:</p>
-<p><a class="reference external" href="https://github.com/jupyter/governance">https://github.com/jupyter/governance</a></p>
-<div class="section" id="the-project">
-<h2>The Project<a class="headerlink" href="#the-project" title="Permalink to this headline">¶</a></h2>
+<p><a class="github reference external" href="https://github.com/jupyter/governance">jupyter/governance</a></p>
+<section id="the-project">
+<h2>The Project<a class="headerlink" href="#the-project" title="Link to this heading">#</a></h2>
 <p>The Jupyter/IPython Project (The Project) is an open source software project
 affiliated with the 501c3 NumFOCUS Foundation. The goal of The Project is to
 develop open source software and deploy open and public websites and services
@@ -343,7 +438,7 @@ open and public Project discussions on GitHub, Google+, Hackpad, Gitter chat
 rooms and mailing lists. The foundation of Project participation is openness
 and transparency.</p>
 <p>Here is a list of the current Contributors to the main IPython repository:</p>
-<p><a class="reference external" href="https://github.com/ipython/ipython/graphs/contributors">https://github.com/ipython/ipython/graphs/contributors</a></p>
+<p><a class="github reference external" href="https://github.com/ipython/ipython/graphs/contributors">ipython/ipython</a></p>
 <p>There are also many other Contributors listed in the logs of other repositories of
 the Jupyter and IPython projects.</p>
 <p>The Project Community consists of all Contributors and Users of the Project.
@@ -356,9 +451,9 @@ sponsor, may hold project trademarks and other intellectual property, helps
 manage project donations and acts as a parent legal entity. NumFOCUS is the
 only legal entity that has a formal relationship with the project (see
 Institutional Partners section below).</p>
-</div>
-<div class="section" id="governance">
-<h2>Governance<a class="headerlink" href="#governance" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="governance">
+<h2>Governance<a class="headerlink" href="#governance" title="Link to this heading">#</a></h2>
 <p>This section describes the governance and leadership model of The Project.</p>
 <p>The foundations of Project governance are:</p>
 <ul class="simple">
@@ -379,8 +474,8 @@ need for a more formal governance model. Moving forward The Project leadership
 will consist of a BDFL and Steering Council. We view this governance model as
 the formalization of what we are already doing, rather than a change in
 direction.</p>
-<div class="section" id="bdfl">
-<h3>BDFL<a class="headerlink" href="#bdfl" title="Permalink to this headline">¶</a></h3>
+<section id="bdfl">
+<h3>BDFL<a class="headerlink" href="#bdfl" title="Link to this heading">#</a></h3>
 <p>The Project will have a BDFL (Benevolent Dictator for Life), who is currently
 Fernando Perez. As Dictator, the BDFL has the authority to make all final
 decisions for The Project. As Benevolent, the BDFL, in practice chooses to
@@ -402,9 +497,9 @@ successor, the Steering Council will make a suggestion or suggestions to the
 Main NumFOCUS Board. While the Steering Council and Main NumFOCUS Board will
 work together closely on the BDFL selection process, the Main NUMFOCUS Board
 will make the final decision.</p>
-</div>
-<div class="section" id="steering-council">
-<h3>Steering Council<a class="headerlink" href="#steering-council" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="steering-council">
+<h3>Steering Council<a class="headerlink" href="#steering-council" title="Link to this heading">#</a></h3>
 <p>The Project will have a Steering Council that consists of Project Contributors
 who have produced contributions that are substantial in quality and quantity,
 and sustained over at least one year. The overall role of the Council is to
@@ -433,8 +528,8 @@ those Services for the benefit of the Project and Community.</p></li>
 <li><p>Make decisions when regular community discussion doesn’t produce consensus
 on an issue in a reasonable time frame.</p></li>
 </ul>
-<div class="section" id="council-membership">
-<h4>Council membership<a class="headerlink" href="#council-membership" title="Permalink to this headline">¶</a></h4>
+<section id="council-membership">
+<h4>Council membership<a class="headerlink" href="#council-membership" title="Link to this heading">#</a></h4>
 <p>To become eligible for being a Steering Council Member an individual must be a
 Project Contributor who has produced contributions that are substantial in
 quality and quantity, and sustained over at least one year. Potential Council
@@ -467,9 +562,9 @@ the period during which they were active in the Council.</p>
 <p>The Council reserves the right to eject current Members, other than the BDFL,
 if they are deemed to be actively harmful to the project’s well-being, and
 attempts at communication and conflict resolution have failed.</p>
-</div>
-<div class="section" id="conflict-of-interest">
-<h4>Conflict of interest<a class="headerlink" href="#conflict-of-interest" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="conflict-of-interest">
+<h4>Conflict of interest<a class="headerlink" href="#conflict-of-interest" title="Link to this heading">#</a></h4>
 <p>It is expected that the BDFL and Council Members will be employed at a wide
 range of companies, universities and non-profit organizations. Because of this,
 it is possible that Members will have conflict of interests. Such conflict of
@@ -488,9 +583,9 @@ interest in a particular issue may participate in Council discussions on that
 issue, but must recuse themselves from voting on the issue. If the BDFL has
 recused his/herself for a particular decision, they will appoint a substitute
 BDFL for that decision.</p>
-</div>
-<div class="section" id="private-communications-of-the-council">
-<h4>Private communications of the Council<a class="headerlink" href="#private-communications-of-the-council" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="private-communications-of-the-council">
+<h4>Private communications of the Council<a class="headerlink" href="#private-communications-of-the-council" title="Link to this heading">#</a></h4>
 <p>Unless specifically required, all Council discussions and activities will be
 public and done in collaboration and discussion with the Project Contributors
 and Community. The Council will have a private mailing list that will be used
@@ -498,9 +593,9 @@ sparingly and only when a specific matter requires privacy. When private
 communications and decisions are needed, the Council will do its best to
 summarize those to the Community after eliding personal/private/sensitive
 information that should not be posted to the public internet.</p>
-</div>
-<div class="section" id="subcommittees">
-<h4>Subcommittees<a class="headerlink" href="#subcommittees" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="subcommittees">
+<h4>Subcommittees<a class="headerlink" href="#subcommittees" title="Link to this heading">#</a></h4>
 <p>The Council can create subcommittees that provide leadership and guidance for
 specific aspects of the project. Like the Council as a whole, subcommittees
 should conduct their business in an open and public manner unless privacy is
@@ -515,9 +610,9 @@ within the team. This is different from a BDFL delegate for a specific decision
 (or a recusal situation), where the BDFL is literally giving up his/her
 authority to someone else in full. It’s more like what Linus Torvalds uses with his
 “lieutenants” model.</p>
-</div>
-<div class="section" id="numfocus-subcommittee">
-<h4>NumFOCUS Subcommittee<a class="headerlink" href="#numfocus-subcommittee" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="numfocus-subcommittee">
+<h4>NumFOCUS Subcommittee<a class="headerlink" href="#numfocus-subcommittee" title="Link to this heading">#</a></h4>
 <p>The Council will maintain one narrowly focused subcommittee to manage its
 interactions with NumFOCUS.</p>
 <ul class="simple">
@@ -534,11 +629,11 @@ than 2 Subcommitee Members can report to one person through employment or
 contracting work (including the reportee, i.e. the reportee + 1 is the
 max). This avoids effective majorities resting on one person.</p></li>
 </ul>
-</div>
-</div>
-</div>
-<div class="section" id="institutional-partners-and-funding">
-<h2>Institutional Partners and Funding<a class="headerlink" href="#institutional-partners-and-funding" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="institutional-partners-and-funding">
+<h2>Institutional Partners and Funding<a class="headerlink" href="#institutional-partners-and-funding" title="Link to this heading">#</a></h2>
 <p>The BDFL and Steering Council are the primary leadership for the project. No
 outside institution, individual or legal entity has the ability to own,
 control, usurp or influence the project other than by participating in the
@@ -604,12 +699,12 @@ Member.</p></li>
 <li><p>Only Institutional Contributors are invited to the Institutional Partners
 Workshop and bi-annual Jupyter/IPython Developer Meeting.</p></li>
 </ul>
-</div>
-<div class="section" id="changing-the-governance-documents">
-<h2>Changing the Governance Documents<a class="headerlink" href="#changing-the-governance-documents" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="changing-the-governance-documents">
+<h2>Changing the Governance Documents<a class="headerlink" href="#changing-the-governance-documents" title="Link to this heading">#</a></h2>
 <p>Changes to the governance documents are submitted via a GitHub pull
 request to The Project’s governance documents GitHub repository at
-<a class="reference external" href="https://github.com/jupyter/governance">https://github.com/jupyter/governance</a>.
+<a class="github reference external" href="https://github.com/jupyter/governance">jupyter/governance</a>.
 There are two phases to the process:</p>
 <p><strong>The discussion phase</strong> begins when the person first opens a pull-request.
 During this time, <em>the pull-request must be in a draft state</em>. The pull
@@ -631,8 +726,8 @@ the PR is closed. Prior to the four-week limit, if at least 80% of the Steering 
 has voted and 2/3 of the votes are in favor (fractions of a vote rounded up to the nearest integer), the proposal passes. Since the BDFL holds ultimate
 authority in The Project, the BDFL has authority to act alone in accepting or
 rejecting changes or overriding Steering Council decisions.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -646,7 +741,7 @@ rejecting changes or overriding Steering Council decisions.</p>
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
@@ -654,26 +749,97 @@ rejecting changes or overriding Steering Council decisions.</p>
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-        
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Project Jupyter Governance</a>
-    <a class='right-next' id="next-link" href="distinguished_contributors.html" title="next page">Jupyter Distinguished Contributors</a>
 
-        </div>
-        
-        </div>
-    </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          By The Jupyter Book community<br/>
-        
-          <div class="extra_footer">
-            <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="linux-proposal.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Proposal for Jupyter’s Sustainable Growth</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="bootstrapping_subproject_councils.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Transition: Bootstrapping Subproject Councils</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-project">The Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#governance">Governance</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bdfl">BDFL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steering-council">Steering Council</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#council-membership">Council membership</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conflict-of-interest">Conflict of interest</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#private-communications-of-the-council">Private communications of the Council</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subcommittees">Subcommittees</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#numfocus-subcommittee">NumFOCUS Subcommittee</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#institutional-partners-and-funding">Institutional Partners and Funding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-governance-documents">Changing the Governance Documents</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
   <a rel="license"
     href="http://creativecommons.org/publicdomain/zero/1.0/">
     <img src="https://licensebuttons.net/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
@@ -691,20 +857,22 @@ This work is published from:
   United States</span>.
 </p>
 
-          </div>
-      </p>
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
   </footer>
-</main>
-
-
-      </div>
-    </div>
-
-    
-  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
   </body>
 </html>

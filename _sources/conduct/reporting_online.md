@@ -1,10 +1,10 @@
-# Project Jupyter Code of Conduct - Reporting Guide - Online Community
+# Reporting Guide - Online Community
 
 If you believe someone is violating the code of conduct we ask that you report
 it to Project Jupyter by emailing
 [*conduct@jupyter.org*](mailto:conduct@jupyter.org) or by completing [this
-form](https://goo.gl/forms/sJzOIie3zde9M71T2). All reports will be kept
-confidential. In some cases we may determine that a public statement will need
+form](https://forms.gle/gRMQc9G4hejqoqgC8). All reports will be kept
+confidential. Code of Conduct reports are currently reviewed by the [Executive Council](../executive_council.md). In some cases we may determine that a public statement will need
 to be made. If that's the case, the identities of all involved will remain
 confidential unless those individuals instruct us otherwise.
 
@@ -50,17 +50,17 @@ means we may delay an "official" response until we believe that the situation
 has ended and that everyone is physically safe.
 
 The Code of Conduct committee will then follow the
-[standard procedure][enforcement.md#Resolutions] to arrive at and
+[standard procedure](enforcement.md) to arrive at and
 communicate a resolution.
 
 
 ## Appealing the Code of Conduct Committee’s Response
 
 To appeal a decision of the Code of Conduct Committee, contact the Jupyter
-Steering Council at
+Executive Council at
 [*steeringcouncil@jupyter.org*](mailto:steeringcouncil@jupyter.org) with your
 appeal and they will review the case.
 
-The Steering Council will gather all relevant information from the Committee
+The Executive Council will gather all relevant information from the Committee
 and provide a resolution within two weeks.  If more time is required, it should
 inform the appellant within that time frame.

@@ -1,0 +1,596 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Executive Council &#8212; Project Jupyter Governance</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'executive_council';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Software Steering Council" href="software_steering_council.html" />
+    <link rel="prev" title="Jupyter Governance Overview" href="overview.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Project Jupyter Governance</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Project Jupyter Governance
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Governance</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Jupyter Governance Overview</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Executive Council</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software_steering_council.html">Software Steering Council</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="software_subprojects.html">Software Subprojects</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="list_of_subprojects.html">List of Official Jupyter Subprojects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newsubprojects.html">New Subproject Process</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="standing_committees_and_working_groups.html">Standing Committees and Working Groups</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="list_of_standing_committees_and_working_groups.html">List of Standing Committees and Working Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="communitybuildingworkinggroup.html">Community Building Working Group</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="distinguished_contributors.html">Distinguished Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="people.html">Leadership Directory</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Code of Conduct</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="conduct/code_of_conduct.html">Project Jupyter Code of Conduct</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="conduct/enforcement.html">Enforcement Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conduct/reporting_online.html">Reporting Guide - Online Community</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conduct/reporting_events.html">Reporting Guide - Jupyter Events</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="CodeofConductJupyterDay.html">JupyterDay Code of Conduct</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="CodeofConductJupyterDayOrganizer.html">JupyterDay Organizer Code of Conduct</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="conduct/faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Organizational Policy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="decision_making.html">Decision-Making Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="papers.html">Process for Authoring Jupyter Related Academic Papers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trademarks.html">Trademark Usage Policy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projectlicense.html">Licensing terms for Project Jupyter code</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Proposals</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="linux-proposal.html">Proposal for Jupyter’s Sustainable Growth</a></li>
+
+
+
+
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Previous Governance</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="governance.html">Previous Governance of Project Jupyter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bootstrapping_subproject_councils.html">Transition: Bootstrapping Subproject Councils</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bootstrapping_executive_council.html">Transition: Bootstrapping Executive Council and New Governance</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/executive_council.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Executive Council</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#responsibilities">Responsibilities</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sole-responsibilities">Sole responsibilities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shared-responsibilities-with-the-software-steering-council">Shared responsibilities with the Software Steering Council</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#team-compass">Team Compass</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#council-membership-and-elections">Council membership and elections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bootstrapping-the-executive-council">Bootstrapping the Executive Council</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="executive-council">
+<h1>Executive Council<a class="headerlink" href="#executive-council" title="Link to this heading">#</a></h1>
+<p>The current members of the Executive Council are listed in the <a class="reference internal" href="people.html"><span class="doc std std-doc">Leadership Directory</span></a>.</p>
+<section id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">#</a></h2>
+<p>The Executive Council (EC) is ultimately responsible for all dimensions of the Project (including, but not limited to, software, legal, financial, community, operations, inclusion and diversity, etc.). The members of the EC actively work to carry out the Project’s mission in accordance with its values and to support operations through delegation to the Software Steering Council (SSC), Software Subprojects, Standing Committees, and Working Groups. These other bodies will report to the EC, and the EC is expected to support, oversee, manage, and ensure the success of operations across Jupyter.</p>
+</section>
+<section id="responsibilities">
+<h2>Responsibilities<a class="headerlink" href="#responsibilities" title="Link to this heading">#</a></h2>
+<section id="sole-responsibilities">
+<h3>Sole responsibilities<a class="headerlink" href="#sole-responsibilities" title="Link to this heading">#</a></h3>
+<p>The EC has the responsibility to:</p>
+<ul class="simple">
+<li><p>Establish, dissolve, support, and manage <a class="reference internal" href="standing_committees_and_working_groups.html#working-groups"><span class="std std-ref">Working Groups</span></a>.</p></li>
+<li><p>Nominate particular Working Groups to have a representative on the SSC.</p></li>
+<li><p>Support and manage <a class="reference internal" href="standing_committees_and_working_groups.html#standing-committees"><span class="std std-ref">Standing Committees</span></a>.</p></li>
+<li><p>Actively work to increase and promote diversity, equity, and inclusion across the Project and its leadership bodies.</p></li>
+<li><p>Maintain and implement the <a class="reference internal" href="conduct/code_of_conduct.html"><span class="std std-doc">Jupyter Code of Conduct</span></a> and incident response process.</p></li>
+<li><p>Serve as the body of appeal for incident decisions made by the Code of Conduct Standing Committee.</p></li>
+<li><p>Raise, allocate, and manage all Project funding and sponsorships, and set policies and procedures for third parties to request external funding with the official endorsement of Project Jupyter.</p></li>
+<li><p>Allocate resources, select candidates, define scope and priorities, and manage roles and personnel employed to conduct business operations on behalf of Project Jupyter.</p></li>
+<li><p>Manage legal aspects of the Project, such as copyright, contracts, compliance, and licensing.</p></li>
+<li><p>Manage the Jupyter brand, including the Project-wide website, core design philosophy, design assets, trademarks, and naming.</p></li>
+<li><p>Manage public communications and community activities, including social media, conferences, workshops, and community-wide resources.</p></li>
+<li><p>Manage any Jupyter services, including hosted services such as nbviewer, <a class="reference external" href="http://jupyter.org">jupyter.org</a>, and <a class="reference external" href="http://mybinder.org">mybinder.org</a>.</p></li>
+<li><p>Manage the Project’s relationship with NumFOCUS, its parent non-profit organization and fiscal sponsor.</p></li>
+<li><p>Write an annual stakeholders letter to provide a summary of the previous year’s activities across the community and to highlight the current and future direction of the Project.</p></li>
+<li><p>Mentor potential future EC members. The EC is expected to identify potential future members of the EC and proactively mentor those individuals.</p></li>
+<li><p>Maintain Project-wide documentation and information to enable users to discover and navigate the resources of the Project.</p></li>
+</ul>
+<p>The EC can override decisions of the SSC, Software Subprojects, Standing Committees, and Working Groups in exceptional situations as the Project’s final decision-maker. The EC cannot override SSC decisions that are shared responsibilities, as listed below.</p>
+</section>
+<section id="shared-responsibilities-with-the-software-steering-council">
+<h3>Shared responsibilities with the Software Steering Council<a class="headerlink" href="#shared-responsibilities-with-the-software-steering-council" title="Link to this heading">#</a></h3>
+<p>The EC and SSC share responsibility for approving:</p>
+<ul class="simple">
+<li><p>Changes to the Jupyter Governance model.</p></li>
+<li><p>Creation of new Jupyter Subprojects.</p></li>
+<li><p>Removal of Subprojects from Jupyter.</p></li>
+</ul>
+<p>In these decisions, each body will <a class="reference internal" href="decision_making.html"><span class="std std-doc">vote</span></a> independently and the change will be approved only if both bodies approve.</p>
+</section>
+<section id="team-compass">
+<h3>Team Compass<a class="headerlink" href="#team-compass" title="Link to this heading">#</a></h3>
+<p>The <a class="reference external" href="https://executive-council-team-compass.readthedocs.io/en/latest/">Executive Council Team Compass</a> publishes information about the activities and operations of the EC, including how to contact the EC.</p>
+</section>
+</section>
+<section id="council-membership-and-elections">
+<h2>Council membership and elections<a class="headerlink" href="#council-membership-and-elections" title="Link to this heading">#</a></h2>
+<p>The EC will consist of 6 Council members who serve 2-year terms. Members are elected from the body of the union of all Standing Committee, Working Group, and Subproject Councils (“Union of Councils”, UoC). Any UoC member is eligible for candidacy in an election unless, as of the start of the new term, they have served on the EC for three or more of the last four years.</p>
+<p>Each annual election will begin with the existing EC notifying the UoC of a call for nominations. Any member of the UoC may nominate a candidate, including themselves. The EC will confirm that a nominee accepts their nomination. The candidate shall write a statement of their interest, qualifications, experience, etc. that will be distributed to voters. Once the full set of candidates is assembled, the UoC and then the EC will take ranked choice votes to fill their allocated number of EC seats. After each election, the total number of seats filled by the UoC should be equal to, or one more than, the number filled by the EC.</p>
+<p>If a member leaves the council before the end of their term, the EC may designate an eligible replacement who will serve for the rest of the term. This replacement will count as a seat filled by the EC if the replacement serves more than half of the term.</p>
+<p>A person may not serve simultaneously on the EC and SSC.</p>
+<p>The EC may vote to remove an EC member. A removal motion passes if two-thirds of the entire EC votes in favor of removal. All EC members are expected to vote without recusal, including the member in question.</p>
+</section>
+<section id="bootstrapping-the-executive-council">
+<h2>Bootstrapping the Executive Council<a class="headerlink" href="#bootstrapping-the-executive-council" title="Link to this heading">#</a></h2>
+<p>The process to create the initial Executive Council is <a class="reference internal" href="bootstrapping_executive_council.html"><span class="std std-doc">described in this document</span></a>.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="overview.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Jupyter Governance Overview</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="software_steering_council.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Software Steering Council</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#responsibilities">Responsibilities</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sole-responsibilities">Sole responsibilities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shared-responsibilities-with-the-software-steering-council">Shared responsibilities with the Software Steering Council</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#team-compass">Team Compass</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#council-membership-and-elections">Council membership and elections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bootstrapping-the-executive-council">Bootstrapping the Executive Council</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+  <a rel="license"
+    href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="https://licensebuttons.net/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+  </a>
+  <br />
+  To the extent possible under law,
+  <a rel="dct:publisher"
+    href="https://jupyter.org">
+    <span property="dct:title">Project Jupyter</span></a>
+  has waived all copyright and related or neighboring rights to
+  <a href="https://github.com/jupyter/governance"><span property="dct:title">Project Jupyter Governance documents</span></a>.
+This work is published from:
+<span property="vcard:Country" datatype="dct:ISO3166"
+      content="US" about="https://jupyter.org">
+  United States</span>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
