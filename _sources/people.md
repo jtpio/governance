@@ -8,9 +8,9 @@ Alphabetical by first name, names are followed by GitHub usernames.
 - Afshin Darian, [@afshin](https://github.com/afshin)
 - Ana Ruvalcaba, [@Ruv7](https://github.com/Ruv7)
 - Brian Granger, [@ellisonbg](https://github.com/ellisonbg)
-- Fernando Perez, [@fperez](https://github.com/fperez)
+- Fernando Pérez, [@fperez](https://github.com/fperez)
 - Jason Grout, [@jasongrout](https://github.com/jasongrout)
-- Steven Silvester, [@blink1073](https://github.com/blink1073)
+- Zach Sailer, [@Zsailer](https://github.com/zsailer)
 
 ## [Software Steering Council](software_steering_council.md)
 
@@ -22,10 +22,22 @@ Alphabetical by first name, names are followed by GitHub usernames.
 | Jupyter Frontends | Jérémy Tuloup | [@jtpio](https://github.com/jtpio) |
 | Jupyter Kernels | Johan Mabille | [@johanmabille](https://github.com/johanmabille) |
 | Jupyter Security | Rick Wagner | [@rpwagner](https://github.com/rpwagner) |
-| Jupyter Server | Zach Sailer | [@zsailer](https://github.com/zsailer) |
+| Jupyter Server | Vidar Fauske | [@vidartf](https://github.com/vidartf) |
 | Jupyter Widgets | Sylvain Corlay | [@SylvainCorlay](https://github.com/SylvainCorlay) |
 | JupyterHub and Binder | Min Ragan-Kelley | [@minrk](https://github.com/minrk) |
 | Voilà | Martin Renou | [@martinRenou](https://github.com/martinRenou) |
+
+## [Jupyter Foundation](jupyter_foundation.md) Governing Board
+
+| Representative | Organization | GitHub username |
+| -------------- | ------------ | --------------- |
+| Afshin Darian | Executive Council | [@afshin](https://github.com/afshin) |
+| Ana Ruvalcaba | Executive Council | [@Ruv7](https://github.com/Ruv7) |
+| Brian Granger | Executive Council | [@ellisonbg](https://github.com/ellisonbg) |
+| Fernando Pérez | Executive Council | [@fperez](https://github.com/fperez) |
+| Jason Grout | Executive Council | [@jasongrout](https://github.com/jasongrout) |
+| Zach Sailer | Executive Council | [@Zsailer](https://github.com/zsailer) |
+
 
 ### Trademark Subcommittee
 
@@ -41,30 +53,32 @@ Alphabetical by first name, names are followed by GitHub usernames.
 - Ana Ruvalcaba, [@Ruv7](https://github.com/Ruv7)
 - Jason Weill, [@JasonWeill](https://github.com/JasonWeill)
 - Martha Cryan, [@marthacryan](https://github.com/marthacryan)
-- Lucy Jimenez, [@LucyJimenez](https://github.com/LucyJimenez)
 
 ### [Jupyter Community Building Working Group](communitybuildingworkinggroup.md)
 
 - Ana Ruvalcaba, [@Ruv7](https://github.com/Ruv7)
 - Jason Grout, [@jasongrout](https://github.com/jasongrout)
 - Martha Cryan, [@marthacryan](https://github.com/marthacryan)
-- Rollin Thomas, [@rcthomas](https://github.com/rcthomas)
 
 ### [Jupyter Media Strategy Working Group](charters/MediaStrategyCharter.md)
 
 - Ana Ruvalcaba, [@Ruv7](https://github.com/Ruv7)
-- Steven Silvester, [@blink1073](https://github.com/blink1073)
 - Andrii Ieroshenko, [@andrii-i](https://github.com/andrii-i)
 - Jacob Diamond-Reivich, [@jake-stack](https://github.com/jake-stack)
 
 ## Former Project Jupyter Leadership
 
-Prior to December 2022, Jupyter was led by a Benevolent Dictator for Life (BDFL)
-and a Steering Council.
+### Committees, Councils, and Working Groups
+- Lucy Jimenez, [@LucyJimenez](https://github.com/LucyJimenez) - DEI Working Group (2022-2024)
+- Rollin Thomas, [@rcthomas](https://github.com/rcthomas) - Community Building Working Group (2022-2024)
+- Steven Silvester, [@blink1073](https://github.com/blink1073) - Executive Council (2022-2024)
 
 ### Benevolent Dictator for Life (retired December 2022)
 
-Fernando Perez ([@fperez](https://github.com/fperez)) was the Benevolent Dictator for Life (BDFL). He
+Prior to December 2022, Jupyter was led by a Benevolent Dictator for Life (BDFL)
+and a Steering Council.
+
+Fernando Pérez ([@fperez](https://github.com/fperez)) was the Benevolent Dictator for Life (BDFL). He
 voluntarily relinquished his role after Jupyter transitioned to a new governance model in December 2022.
 
 ### Steering Council (dissolved December 2022)
@@ -74,7 +88,7 @@ voluntarily relinquished his role after Jupyter transitioned to a new governance
 - Brian Granger, [@ellisonbg](https://github.com/ellisonbg) (Founding member, 2014-2022)
 - Carol Willing, [@willingc](https://github.com/willingc) (2017-2022)
 - Damian Avila, [@damianavila](https://github.com/damianavila) (Founding member, 2014-2022)
-- Fernando Perez, [@fperez](https://github.com/fperez) (Founding member, 2014-2022)
+- Fernando Pérez, [@fperez](https://github.com/fperez) (Founding member, 2014-2022)
 - Jason Grout, [@jasongrout](https://github.com/jasongrout) (2015-2022)
 - Jessica Hamrick, [@jhamrick](https://github.com/jhamrick) (2015-2022)
 - Jonathan Frederic, [@jdfreder](https://github.com/jdfreder) (2016-2018)
@@ -91,7 +105,7 @@ voluntarily relinquished his role after Jupyter transitioned to a new governance
 ### NumFOCUS Subcommittee (dissolved December 2022)
 
 - Ana Ruvalcaba, [@Ruv7](https://github.com/Ruv7)
-- Fernando Perez, [@fperez](https://github.com/fperez)
+- Fernando Pérez, [@fperez](https://github.com/fperez)
 - Matthias Bussonnier, [@carreau](https://github.com/carreau)
 - Stefan van der Walt (non-council member), [@stefanv](https://github.com/stefanv)
 - Thomas Kluyver, [@takluyver](https://github.com/takluyver)

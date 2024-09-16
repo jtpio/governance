@@ -1,12 +1,12 @@
 # List of Official Jupyter Subprojects
 
-At the highest level, any Github repository under any official Jupyter GitHub organization is either itself an Official Jupyter Subproject, or is part of an Official Jupyter Subproject. All such Subprojects have all of the privileges and responsibilities detailed in the Software Subprojects of Jupyter governance document. Within the Official Jupyter Subproject designation, there are two types of Subprojects: ones with a formal Subproject Council and SSC representation, and smaller, less active ones whose Subproject Council is the SSC itself. This document enumerates Subprojects of these two types.
+Jupyter software development is carried out in [Software Subprojects](./software_subprojects). Within the Official Jupyter Subproject designation, there are two types of Subprojects: ones with a formal Subproject Council and SSC representation, and smaller, less active ones whose Subproject Council is the SSC itself. This document enumerates Subprojects of these two types.
 
 ## Official Subprojects with SSC representation
 
 The following Jupyter Subprojects have their own formal Subproject Council that elects and maintains an SSC representative:
 
-- [Jupyter Frontends](https://github.com/jupyterlab/team-compass)
+- [Jupyter Frontends](https://github.com/jupyterlab/frontends-team-compass)
   - [JupyterLab](https://github.com/jupyterlab/jupyterlab)
   - [Jupyter Notebook](https://github.com/jupyter/notebook)
 - [JupyterHub and Binder](https://github.com/jupyterhub/team-compass)
@@ -26,6 +26,7 @@ The following Jupyter Subprojects have their own formal Subproject Council that 
 - [Jupyter Foundations and Standards](https://github.com/jupyter/foundations-and-standards-team-compass)
 - [Jupyter Security](https://github.com/jupyter/security)
 - [Jupyter Accessibility](https://github.com/jupyter/accessibility)
+- [Jupyter Book](https://github.com/jupyter-book/team-compass)
 
 ## Official Subprojects without SSC representation
 
